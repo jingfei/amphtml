@@ -66,6 +66,7 @@ let VariablesDef;
   minuteTwoDigit: string,
   secondTwoDigit: string,
   dayPeriod: string,
+  hourCycle: string,
  }} */
 let EnhancedVariablesDef;
 
@@ -265,6 +266,8 @@ export class AmpDateDisplay extends AMP.BaseElement {
       minuteTwoDigit: this.padStart_(data.minute),
       secondTwoDigit: this.padStart_(data.second),
       dayPeriod: data.hour < 12 ? 'am' : 'pm',
+      // It could be undefined (i.e. IE11)
+      hourCycle: new this.ampdoc_.win.Intl.DateTimeFormat(this.locale_).resolvedOptions().hourCycle,
     });
   }
 

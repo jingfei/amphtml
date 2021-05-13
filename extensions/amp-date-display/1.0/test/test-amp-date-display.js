@@ -72,6 +72,7 @@ describes.realWin(
         second: '{{second}}',
         secondTwoDigit: '{{secondTwoDigit}}',
         dayPeriod: '{{dayPeriod}}',
+        hourCycle: '{{hourCycle}}',
         iso: '{{iso}}',
       });
       element.appendChild(template);

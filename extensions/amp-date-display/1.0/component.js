@@ -84,6 +84,7 @@ let VariablesV2Def;
   minuteTwoDigit: string,
   secondTwoDigit: string,
   dayPeriod: string,
+  hourCycle: string,
  }} */
 let EnhancedVariablesV2Def;
 
@@ -168,6 +169,7 @@ function enhanceBasicVariables(data) {
     'minuteTwoDigit': padStart(data.minute),
     'secondTwoDigit': padStart(data.second),
     'dayPeriod': data.hour < 12 ? 'am' : 'pm',
+    'hourCycle': new this.ampdoc_.win.Intl.DateTimeFormat().resolvedOptions().hourCycle,
   });
 }
 

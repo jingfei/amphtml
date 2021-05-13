@@ -65,6 +65,7 @@ This table lists the format you can specify in your Mustache template:
 | hour           | 0, 1, 2, 3, ..., 12, 13, ..., 22, 23                          |
 | hour12         | 1, 2, 3, ..., 12, 1, 2, ..., 11, 12                           |
 | hour12TwoDigit | 01, 02, ..., 12, 01, 02, ..., 11, 12                          |
+| hourCycle      | string,                                                       |
 | hourTwoDigit   | 00, 01, 02, ..., 12, 13, ..., 22, 23                          |
 | iso            | A standard ISO8601 date string e.g. 2019-01-23T15:31:21.213Z, |
 | minute         | 0, 1, 2, ..., 58, 59                                          |

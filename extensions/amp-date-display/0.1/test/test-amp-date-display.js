@@ -205,6 +205,7 @@ describes.realWin(
       expect(data.monthNameShort).to.equal('úno');
       expect(data.dayName).to.equal('sobota');
       expect(data.dayNameShort).to.equal('so');
+      expect(data.hourCycle).to.equal('h23');
     });
   }
 );
